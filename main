@@ -1,0 +1,16 @@
+from Cuadrado import Cuadrado
+from Rectangulo import Rectangulo 
+
+print('Creacion objeto cuadrado'. center(50, '-'))
+cuadrado1 = Cuadrado(lado=5, color='azul')
+cuadrado1.alto = 9 # modificando el atributo alto y pasando un valor correcto
+cuadrado1.ancho = 9
+print(f'El area del cuadrado es: {cuadrado1.calcular_area()}')
+print(cuadrado1)
+print(Cuadrado.mro())
+
+print('Creacion objeto rectangulo'. center(50, '-'))
+rect1 = Rectangulo(ancho=9, alto=5, color='verde')
+rect1.ancho = 15 #modificando el atributo ancho y pasando un valor erroneo
+print(f'El area del rectangulo es: {rect1.area()}')
+print(rect1)
